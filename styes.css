@@ -1,70 +1,97 @@
-/* ==========================================
-   ESTILOS CSS - TONOS VINOTINTO Y BLANCO
-   ========================================== */
 
-/* Variables de color para fácil personalización */
-:root {
-  --color-vinotinto: #6b1d2f;      /* Vinotinto principal */
-  --color-vinotinto-oscuro: #48121f; /* Vinotinto profundo (para contrastes o bordes) */
-  --color-vino-claro: #8c2840;     /* Vinotinto acento */
-  --color-blanco: #ffffff;         /* Blanco puro */
-  --color-fondo-claro: #fcf6f7;    /* Fondo ligeramente rosado/blanco cálido */
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-/* Aplicar cursiva de forma global a todo el texto */
+/* Página */
 body {
-  font-family: 'Georgia', serif; /* Las fuentes con remates suelen lucir muy bien en cursiva */
-  font-style: italic;
-  background-color: var(--color-fondo-claro);
-  color: var(--color-vinotinto-oscuro);
-  margin: 0;
-  padding: 0;
-  line-height: 1.6;
+    background-color: #ffffff;
+    color: #333333;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    padding: 20px;
 }
 
-/* Encabezados en tonos vinotinto profundo */
-h1, h2, h3, h4, h5, h6 {
-  color: var(--color-vinotinto);
-  font-style: italic;
-  font-weight: bold;
+/* Títulos en cursiva */
+h1, h2, h3 {
+    color: #cc0000;
+    font-family: Georgia, serif;
+    font-style: italic;
+    text-align: center;
+    margin-bottom: 20px;
 }
 
-/* Contenedor principal o tarjetas (Fondo blanco con detalles vinotinto) */
-.card, .container, header, footer {
-  background-color: var(--color-blanco);
-  color: var(--color-vinotinto-oscuro);
-  border: 1px solid rgba(107, 29, 47, 0.2);
-  border-radius: 8px;
-  padding: 20px;
-  margin: 20px auto;
-  box-bradius: 4px;
+/* Título principal */
+h1 {
+    font-size: 40px;
+    font-weight: bold;
 }
 
-/* Botones principales en tono vinotinto con texto blanco */
-button, .btn {
-  background-color: var(--color-vinotinto);
-  color: var(--color-blanco);
-  border: none;
-  padding: 10px 20px;
-  font-family: inherit;
-  font-style: italic;
-  font-size: 1rem;
-  border-radius: 4px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
+/* Subtítulos */
+h2 {
+    font-size: 30px;
 }
 
-button:hover, .btn:hover {
-  background-color: var(--color-vino-claro);
+h3 {
+    font-size: 24px;
 }
 
-/* Enlaces discretos */
-a {
-  color: var(--color-vinotinto);
-  text-decoration: underline;
-  font-style: italic;
+/* Párrafos */
+p {
+    font-size: 16px;
+    color: #444444;
+    margin-bottom: 15px;
 }
 
-a:hover {
-  color: var(--color-vino-claro);
+/* Menú de navegación */
+nav {
+    background-color: #cc0000;
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ffcccc;
+}
+
+/* Botones */
+button {
+    background-color: #cc0000;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #990000;
+}
+
+/* Contenedores */
+section {
+    background-color: #fff5f5;
+    border-left: 5px solid #cc0000;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+}
+
+/* Pie de página */
+footer {
+    background-color: #cc0000;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
 }
