@@ -1,6 +1,70 @@
-body{
-  padding: 25px;
+/* ==========================================
+   ESTILOS CSS - TONOS VINOTINTO Y BLANCO
+   ========================================== */
+
+/* Variables de color para fácil personalización */
+:root {
+  --color-vinotinto: #6b1d2f;      /* Vinotinto principal */
+  --color-vinotinto-oscuro: #48121f; /* Vinotinto profundo (para contrastes o bordes) */
+  --color-vino-claro: #8c2840;     /* Vinotinto acento */
+  --color-blanco: #ffffff;         /* Blanco puro */
+  --color-fondo-claro: #fcf6f7;    /* Fondo ligeramente rosado/blanco cálido */
 }
-.title {
-	color: #5C6AC4;
+
+/* Aplicar cursiva de forma global a todo el texto */
+body {
+  font-family: 'Georgia', serif; /* Las fuentes con remates suelen lucir muy bien en cursiva */
+  font-style: italic;
+  background-color: var(--color-fondo-claro);
+  color: var(--color-vinotinto-oscuro);
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+/* Encabezados en tonos vinotinto profundo */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--color-vinotinto);
+  font-style: italic;
+  font-weight: bold;
+}
+
+/* Contenedor principal o tarjetas (Fondo blanco con detalles vinotinto) */
+.card, .container, header, footer {
+  background-color: var(--color-blanco);
+  color: var(--color-vinotinto-oscuro);
+  border: 1px solid rgba(107, 29, 47, 0.2);
+  border-radius: 8px;
+  padding: 20px;
+  margin: 20px auto;
+  box-bradius: 4px;
+}
+
+/* Botones principales en tono vinotinto con texto blanco */
+button, .btn {
+  background-color: var(--color-vinotinto);
+  color: var(--color-blanco);
+  border: none;
+  padding: 10px 20px;
+  font-family: inherit;
+  font-style: italic;
+  font-size: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover, .btn:hover {
+  background-color: var(--color-vino-claro);
+}
+
+/* Enlaces discretos */
+a {
+  color: var(--color-vinotinto);
+  text-decoration: underline;
+  font-style: italic;
+}
+
+a:hover {
+  color: var(--color-vino-claro);
 }
